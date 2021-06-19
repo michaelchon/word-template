@@ -1,0 +1,13 @@
+.paragraph {
+    margin: 1rem -0.5rem;
+}
+.paragraph--no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.paragraph > * {
+    margin: 0.5rem;
+}
+.paragraph .paragraph__text {
+    margin: 0.5rem 0;
+}
