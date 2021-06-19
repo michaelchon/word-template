@@ -141,7 +141,17 @@ export const template = new Template("Осмотр терапевта", [
         }),
         new Text("."),
     ]),
-
+    new Paragraph([
+        new Text("Временно нетрудоспособен(на). ЭЛН/ЛН № "),
+        new Input("", { type: "text" }),
+        new Text("."),
+    ]),
+    new Paragraph([new Label("Активное посещение, явка в поликлинику.")]),
+    new Paragraph([
+        new Label("Режим: "),
+        new Choice({ variants: ["постельный", "полупостельный"] }),
+        new Text("."),
+    ]),
     new Paragraph([
         new Label("Лечение: "),
         new Combination({
@@ -159,26 +169,6 @@ export const template = new Template("Осмотр терапевта", [
         }),
         new Text("."),
     ]),
-    new Paragraph([
-        new Text("Временно нетрудоспособен(на). ЭЛН/ЛН № "),
-        new Input("", { type: "text" }),
-        new Text("."),
-    ]),
-    new Paragraph([
-        new Label("Режим: "),
-        new Choice({ variants: ["постельный", "полупостельный"] }),
-        new Text("."),
-    ]),
-    new Paragraph([
-        new Text("Больничный лист № "),
-        new Input("", { type: "text" }),
-        new Text(" с "),
-        new Input("", { type: "date" }),
-        new Text(" по "),
-        new Input("", { type: "date" }),
-        new Text("."),
-    ]),
-    new Paragraph([new Label("Активное посещение, явка в поликлинику.")]),
     new Paragraph(
         [new Input("", { type: "date" }), new Text("Врач Цой К.Я.")],
         { alignment: AlignmentType.JUSTIFIED }
