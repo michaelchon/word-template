@@ -170,7 +170,11 @@ export const template = new Template("Осмотр терапевта", [
         new Text("."),
     ]),
     new Paragraph(
-        [new Input("", { type: "date" }), new Text("Врач Цой К.Я.")],
+        [
+            new Input("", { type: "date" }),
+            new Text("Врач "),
+            new Input("", { type: "text" }),
+        ],
         { alignment: AlignmentType.JUSTIFIED }
     ),
 ]);
